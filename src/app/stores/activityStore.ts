@@ -20,6 +20,17 @@ export default class ActivityStore {
     );
   }
 
+  get groupActivities() {
+    // This is like groupBy in c#
+    return Object.entries(
+      this.activitiesByDate.reduce((activities, activity) => {
+        const date = activity.date;
+        activities[date] = activities[date] ? [...activities[date], activity] : [activity];
+        return activities;
+      }, {} as {[key: string] : Activity[]})
+    );
+  }
+
   loadActivities = async () => {
     this.setLoadingInitial(true);
     try {
