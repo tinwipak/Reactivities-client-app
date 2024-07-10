@@ -7,6 +7,9 @@
     "start": "vite",
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "build_dev": "tsc -b && vite build --base=/tdpwebdev/",
+    "build_sit": "tsc -b && vite build --base=/tdpwebsit/",
+    "build_uat": "vite build --base=/tdpwebuat/",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
