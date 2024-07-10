@@ -25,7 +25,7 @@ export default observer(function ActivityDetailedSidebar () {
                         >
                             Host
                         </Label>
-                        <Image size='tiny' src={'/assets/user.png'} />
+                        <Image size='tiny' src={'./assets/user.png'} />
                         <Item.Content verticalAlign='middle'>
                             <Item.Header as='h3'>
                                 <Link to={`#`}>Bob</Link>
@@ -35,7 +35,7 @@ export default observer(function ActivityDetailedSidebar () {
                     </Item>
 
                     <Item style={{ position: 'relative' }}>
-                        <Image size='tiny' src={'/assets/user.png'} />
+                        <Image size='tiny' src={'./assets/user.png'} />
                         <Item.Content verticalAlign='middle'>
                             <Item.Header as='h3'>
                                 <Link to={`#`}>Tom</Link>
@@ -45,7 +45,7 @@ export default observer(function ActivityDetailedSidebar () {
                     </Item>
 
                     <Item style={{ position: 'relative' }}>
-                        <Image size='tiny' src={'/assets/user.png'} />
+                        <Image size='tiny' src={'./assets/user.png'} />
                         <Item.Content verticalAlign='middle'>
                             <Item.Header as='h3'>
                                 <Link to={`#`}>Sally</Link>

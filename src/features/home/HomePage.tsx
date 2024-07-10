@@ -1,17 +1,19 @@
 import { Link } from "react-router-dom";
 import { Container, Header, Segment, Image, Button } from "semantic-ui-react";
+import KrungsriBanner756x230 from './../../assets/krungsri-banner756x230.jpg'
 
 export default function HomePage() {
   return (
     <Segment inverted textAlign="center" vertical className="masthead">
       <Container text>
         <Header as="h1" inverted>
-          <Image size="massive" src="/assets/logo.png" alt="logo" style={{ marginBottom: 12 }} />
+          <Image size="massive" src="./assets/logo.png" alt="logo" style={{ marginBottom: 12 }} />
           Reactivities
         </Header>
+        <Image size="massive" src={KrungsriBanner756x230} />
         <Header as="h2" inverted content="Welcome to Reactivities" />
         <Button as={Link} to='/activities' size="huge" inverted >
-        Take me to the activities
+          Take me to the activities
         </Button>
       </Container>
     </Segment>
